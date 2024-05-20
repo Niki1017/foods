@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+    /* background-color: pink; */
+}
+
+header{
+    /* background-color: aqua; */
+    padding: 30px 0;
+}
+
+header .container{
+    justify-content: space-between;
+    display: flex;
+}
+
+
+header .left{
+    /* background-color: blue; */
+    display: flex;
+}
+
+.left li{
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+}
+
+.left li a{
+    color: #222;
+    transition: .4s;
+}
+
+.left li a:hover{
+    color: #09A66D;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right button,
+.right a{
+    font-family: 'Poppins', sans-serif;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    border: none;
+}
+
+.right a{
+    display: flex;
+    background-color: #09A66D;
+    justify-content: center;
+    width: 160px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .2s;
+    border-radius: 16px;
+}
+
+.right a:hover{
+    background-color: #f3fbf8;
+    color: #09A66D;
+}
+
+
+.right button{
+    background-color: #f3fbf8;
+    border-radius: 500px;
+}
+
+.left li a{
+    text-decoration: none;
+}
+
+.search{
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    background-image: url("Search.svg");
+    transition: .9s;
+}
+
+.search:hover{
+    transform: rotate(-280deg);
+}
+
+.bag{
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .4s;
+    cursor: pointer;
+    background-image: url("Buy.svg");    
+}
+
+.bag:hover{
+    background-position: 300% center;
+}
+
+.info{
+    position: relative;
+    background-color: #F3FBF8;
+}
+
+.info .container{
+    position: relative;
+}
+
+.info .container h1{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 50px;
+}
+
+.titleText{
+    margin-bottom: 30px;
+    padding-top: 60px;
+}
+
+.description{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.order{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info .order p{
+    display: block;
+    width: auto;
+    margin: 0;
+    padding-top: 0;
+    margin-right: 30px;
+}
+
+.strelka{
+    display: block;
+    background-image: url("strelka.svg");
+    width: 64px;
+    border-radius: 2000px;
+    height: 64px;
+    background-color: #09A66D;
+}
+
+.card-header{
+    /* background-color: #222; */
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card-header .card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.info .container .card{
+    background-color: #fff;
+}
+
+#lists{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+#fructs{
+    object-fit: contain;
+}
+.hero{
+    display: flex;
+    align-items: flex-end;
+}
+
+.about{
+    background-image: url("izvilina.svg");
+}
+
+.service-left{
+    background-color: pink;
+}
+
+.service-right{
+    background-color: orange;
+}
